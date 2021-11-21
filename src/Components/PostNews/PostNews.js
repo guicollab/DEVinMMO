@@ -48,7 +48,8 @@ const PostNews = ({ term }) => {
   return (
     <>
       <StyledCountNews>
-        <strong>{count.length}</strong> resultado(s) encontrado(s)
+        <strong>{count.length}</strong> resultado(s) encontrado(s) para:{" "}
+        <strong>{term}</strong>
       </StyledCountNews>
       {count.map((items) => {
         const { id, thumbnail, title, short_description, article_url } = items;

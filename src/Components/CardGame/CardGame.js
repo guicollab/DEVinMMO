@@ -46,7 +46,8 @@ const CardGame = ({ term }) => {
   return (
     <>
       <StyledCountGames>
-        <strong>{count.length}</strong> resultado(s) encontrado(s)
+        <strong>{count.length}</strong> resultado(s) encontrado(s) para:{" "}
+        <strong>{term}</strong>
       </StyledCountGames>
       {count.map((items) => {
         const { id, thumbnail, title, platform, short_description } = items;
